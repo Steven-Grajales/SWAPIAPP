@@ -1,0 +1,29 @@
+<mat-card>
+  <mat-card-title>Films List</mat-card-title>
+  <br>
+  <mat-card-content *ngIf="film">
+
+    <p><strong>Title:</strong> {{film.title}}</p>
+    <p><strong>episodeId:</strong> {{film.episode_id}}</p>
+    <p><strong>openingCrawl:</strong> {{film.opening_crawl}}</p>
+    <p><strong>director:</strong> {{film.director}}</p>
+    <p><strong>producer:</strong> {{film.producer}}</p>
+    <p><strong>releaseDate:</strong> {{film.release_date}}</p>
+    <p><strong>characters:</strong>
+    <mat-list-item *ngFor="let personaje of film.characters">
+      <h3 mat-line>
+        <a mat-button  >{{personaje}}</a>
+      </h3>
+    </mat-list-item>
+
+    </p>
+    <p><strong>planets:</strong> {{film.planets}}</p>
+    <p><strong>starships:</strong> {{film.starships}}</p>
+    <p><strong>vehicles:</strong> {{film.vehicles}}</p>
+    <p><strong>species:</strong> {{film.species}}</p>
+    <p><strong>created:</strong> {{film.created}}</p>
+    <p><strong>edited:</strong> {{film.edited}}</p>
+    <p><strong>url:</strong> {{film.url}}</p>
+
+  </mat-card-content>
+</mat-card>

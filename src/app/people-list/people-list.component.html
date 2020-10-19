@@ -1,0 +1,17 @@
+<mat-card>
+  <mat-card-title>Characters List</mat-card-title>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let person of people">
+        <h3 mat-line>
+          <a mat-button (click)="selectPerson(person)" >{{person.name}}</a>
+        </h3>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+
+  <mat-card-actions>
+<button mat-raised-button color="primary" (click)="previousPage()">Previous Page</button>
+<button mat-raised-button color="primary" (click)="nextPage()">Next Page</button>
+  </mat-card-actions>
+</mat-card>
