@@ -3,6 +3,10 @@
   <mat-toolbar-row>
     <span>Welcome to {{title}}!</span>
   </mat-toolbar-row>
+
+  <mat-toolbar-row>
+  <button mat-flat-button color="accent" class="menu-button" [routerLink]="['/people-list']">Character list</button>
+  </mat-toolbar-row>
 </mat-toolbar>
 
 <router-outlet></router-outlet>

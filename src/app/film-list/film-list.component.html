@@ -10,9 +10,9 @@
     <p><strong>producer:</strong> {{film.producer}}</p>
     <p><strong>releaseDate:</strong> {{film.release_date}}</p>
     <p><strong>characters:</strong>
-    <mat-list-item *ngFor="let personaje of film.characters">
+    <mat-list-item *ngFor="let personaje of nameCharacters">
       <h3 mat-line>
-        <a mat-button  >{{personaje}}</a>
+        <a mat-button (click)="selectPerson(personaje)" >{{personaje}}</a>
       </h3>
     </mat-list-item>
 

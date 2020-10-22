@@ -12,7 +12,7 @@
     <p><strong>birth_year:</strong>: {{people.birth_year}}</p>
     <p><strong>home_world:</strong>: {{people.home_world}}</p>
     <h3><strong>Films:</strong>:
-    <mat-list-item *ngFor="let film of people.films">
+    <mat-list-item *ngFor="let film of nameFilms">
       <h3 mat-line>
         <a mat-button (click)="selectFilm(film)" >{{film}}</a>
       </h3>
